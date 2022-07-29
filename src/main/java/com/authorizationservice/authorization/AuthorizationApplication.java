@@ -24,7 +24,7 @@ public class AuthorizationApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		AuthenticationRequest user1 = new AuthenticationRequest("User", "user");
-		AuthenticationRequest user2 = new AuthenticationRequest("admin", "admin");
+		AuthenticationRequest user2 = new AuthenticationRequest("Admin", "admin");
 		AuthenticationRequest user3 = new AuthenticationRequest("Jatin", "12345");
 		AuthenticationRequest user4 = new AuthenticationRequest("Aswin", "12345");
 		AuthenticationRequest user5 = new AuthenticationRequest("Mohit", "12345");
