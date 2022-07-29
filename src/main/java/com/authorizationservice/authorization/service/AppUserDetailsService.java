@@ -34,9 +34,10 @@ public class AppUserDetailsService implements UserDetailsService {
 			log.debug("User : " + user);
 			log.info("END - [loadUserByUsername()]");
 			return user;
+		}else {
+			
+			throw new UsernameNotFoundException("User not found!!");
 		}
-		
-		throw new UsernameNotFoundException("User not found!!");
 	}
 
 	public AuthenticationRequest getUser(String userName) {
